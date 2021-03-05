@@ -1,0 +1,13 @@
+fieldset {
+    margin: auto;
+    width: 30%;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(177, 176, 174);
+    
+      }
+
+
+.Siguiente {
+    position: right;
+}
+

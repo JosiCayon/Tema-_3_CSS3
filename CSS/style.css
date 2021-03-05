@@ -1,5 +1,191 @@
-div{
-    background-color: red;
-    height: 500px;
-    width: 100px;
+/* Tipos de Display: none, inline, block, inline-block */
+
+/* El sombrerito significa que el valor "empieza por" */
+[class^="box"] {
+    background-color: steelblue;
+}
+
+.box-0 {
+    display: none;
+}
+
+/* El inline-block permite distintos bloques en la misma línea, respeta margenes,
+padding, etc... */
+.box-3,
+.box-4,
+.box-3 p,
+.box-4 p {
+    display: inline-block;
+}
+
+/* Estos contenedores los hago inline, para ello modifico display del contenedor
+y de los <p> (que también son de tipo block) */
+.box-5, .box-6, .box-5 p, .box-6 p {
+    display: inline;
+}
+
+
+
+
+/* Centrar Horizontalmente EJE X */
+.x-centered {
+    background-color: teal;
+    height: 50px;
+    width: 25%;
+    
+    margin: auto;
+}
+/*Posicion Relativa*/
+.pos-relative {
+    position: relative;
+    left: 150px;
+
+}
+
+/*Posicion Absoluta*/
+.pos-absolute-parent {
+height: 300px;
+border: 15 solid tomato;
+
+position: relative; /*esta posicion se poner para que el hijo 
+tome de referencia al padre*/
+}
+.pos-absolute-child {
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+
+    position: absolute;/*coge de referencia la posicion relativa
+    del padre*/
+    bottom: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+  
+}
+
+.pos-fixed {
+    background-color: #333;
+    padding: 20px 30px;
+
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+.pos-fixed a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+/*Posicion Sticky*/
+.pos-sticky {
+    background-color: steelblue;
+    padding: 15px 25px;
+
+    position: sticky;
+    top: 0;
+
+    
+}
+.pos-sticky a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Posicionamiento Flotante / Float "Divs dentro de otros divs"*/
+
+.pos-float-parent {
+    border: 5px solid royalblue;
+    color: white;
+    font-size: 30px;
+
+}
+.pos-float-child-1 {
+    background-color: brown;
+    height: 100px;
+    width: 33.3%;
+
+    float: left;
+}
+
+.pos-float-child-2 {
+    background-color: darkblue;
+    height: 100px;
+    width: 33.3%;
+
+    float: right;
+
+}
+.pos-float-child-3 {
+    background-color: orangered;
+    height: 100px;
+    width: 33.3%;
+
+}
+.pos-float-child-4 {
+    background-color: yellowgreen;
+    height: 50px;
+    width: 100%;
+
+}
+.pos-float-child-5 {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+
+    float: right;
+
+}
+.pos-float-child-6 {
+    background-color: blueviolet;
+    height: 50px;
+    width: 100%;
+
+clear:both
+}
+.pos-float-child-2-1 {
+    background-color: #ddd;
+    height: 25px;
+    width: 20%;
+}
+.pos-float-child-2-2 {
+    background-color: rebeccapurple;
+    height: 25px;
+    width: 20%;
+}
+
+/* Overflow - Gestión del desbordamiento del contenido  */
+/*[class^="overflow-parent"] {
+    width: 200px;
+    height: 100px;
+    border: 3px dashed black;
+    margin-bottom: 150px;
+}*/
+
+.overflow-parent-1 {
+    overflow: hidden;
+}
+.overflow-parent-2 {
+    overflow: visible;
+}
+.overflow-parent-3 {
+    overflow: scroll ;
+}
+/*Tamaño de Cajas (box sizing)*/
+.box-sizing-parent{
+    width: 200px;
+    height: 200px;
+    border: 10px solid goldenrod
+}
+.box-sizing-child {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    border: 10px solid darkolivegreen;
+
+    box-sizing: content-box;
+}
+.border-box {
+    margin-top: 10px;
+    box-sizing: border-box;
 }
