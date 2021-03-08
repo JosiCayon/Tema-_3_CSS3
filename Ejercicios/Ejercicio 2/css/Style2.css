@@ -1,0 +1,31 @@
+
+/* Estilos básicos */
+nav {
+    border: 2px solid #ddd;
+    padding: 12px;
+    background-color: rgb(177, 176, 174);
+    
+      }
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Solucion 1 con posicionamiento absoluto */
+/* nav {
+    position: relative;
+}
+
+
+nav a:last-child {
+    position: absolute;
+    right: 12px;
+} */
+
+/* Solucion 2 con posicionamiento flotante o float */
+
+nav a:last-child {
+    float: right;
+}
