@@ -1,0 +1,60 @@
+body {
+    color: #fff;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.container {
+    padding: 1px 10%;
+}
+.brand-banner {
+    background-color: coral;
+    color: white;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.navbar li {
+    display: inline;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+.img-header {
+    background-image: url(img/caught-in-joy-l3xsVNUe98U-unsplash.jpg);
+    text-align: center;
+
+    background-position: center right;
+}
+
+.img-header h1 {
+    font-size: 3em;
+    line-height: 1.6em;
+    margin: 30px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    .main-section, aside {
+        float: none;
+        width: 100%;
+    }
+    .welcome {
+        margin-bottom: 30px;
+    }
+    .img-header h1 {
+        font-size: 3em;
+        line-height: 1.3em;
+        margin: 20px 5px;
+    }
+    .navbar li {
+        display: block;
+        margin-top: 15px;
+    }
+}
+    
