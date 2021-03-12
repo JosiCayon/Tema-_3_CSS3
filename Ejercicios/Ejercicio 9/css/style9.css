@@ -1,0 +1,30 @@
+.principal {
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: repeat(4, 90px);
+    gap: 10px;
+}
+
+[class^="caja"] {
+    background-color: rgb(78, 186, 236);
+}
+
+[class^="caja"]:hover{
+    transform: scale(1.2);
+    transition: ease-in;
+}
+
+.principal {
+    animation: slidein 2s;
+}
+
+@keyframes slidein {
+    from {
+        
+    }
+
+    to {
+
+    }   
+
+}

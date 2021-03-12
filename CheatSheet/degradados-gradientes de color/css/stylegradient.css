@@ -1,0 +1,25 @@
+
+[class^="gradient"] {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.gradient-1 {
+    background: linear-gradient(to right, darkblue, white);
+}
+
+.gradient-2 {
+    background: linear-gradient(to bottom, white, darkblue 20%, white);
+}
+
+.gradient-3 {
+    background: linear-gradient(to bottom, black,0 , white, 1) url();
+}
+
+.gradient-4 {
+    background: radial-gradient(white, tomato, red);
+    width: 50%;
+    box-shadow: 50px 25px 15px black;
+}
+
+

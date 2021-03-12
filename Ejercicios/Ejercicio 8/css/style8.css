@@ -7,7 +7,7 @@
     grid-template-areas: "page-title page-title " 
                          "main-content masthead " 
                          "main-content sidebar"
-                        "footer-content footer-content";
+                         "footer-content footer-content";
 
 }
 
